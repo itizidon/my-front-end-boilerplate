@@ -1,14 +1,16 @@
-import React from 'react';
-import axios from 'axios';
+import React from 'react'
+import { connect } from 'react-redux'
+import axios from 'axios'
 
 class App extends React.Component {
   render() {
-   return(
-    <div>
-    My App Component
-    </div>
-   );
+    console.log(this.props.state)
+    return <div>My App Component</div>
   }
- }
+}
 
- export default App
+const mapStateToProps = state => ({
+  state: state
+})
+
+export default connect(mapStateToProps, null)(App)

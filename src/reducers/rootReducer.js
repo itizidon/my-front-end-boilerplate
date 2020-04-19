@@ -1,4 +1,4 @@
-const rootReducer = (state = {}, action) =>{
+const rootReducer = (state = {hi: 'hi'}, action) =>{
   return state;
 }
 
